@@ -1,29 +1,53 @@
 {
   "expo": {
     "name": "PetTrack",
-    "slug": "PetTrack",
+    "slug": "pet-track",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/PetTrackIcon.png",
     "userInterfaceStyle": "light",
     "newArchEnabled": true,
     "splash": {
-      "image": "./assets/splash-icon.png",
+      "image": "./assets/PetTrackIcon.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.andhrenand.PetTrack",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/PetTrackIcon.png",
         "backgroundColor": "#ffffff"
       },
-      "edgeToEdgeEnabled": true
+      "package": "com.andhrenand.PetTrack"
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#232323",
+          "image": "./assets/PetTrackIcon.png",
+          "dark": {
+            "image": "./assets/PetTrackIcon.png",
+            "backgroundColor": "#000000"
+          },
+          "imageWidth": 200
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "f6e7c196-1c5b-490b-a033-0aabf5a423fd"
+      }
+    },
+    "owner": "andhrenan"
   }
 }
